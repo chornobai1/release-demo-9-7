@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-27
+
+### Added
+
+- Filter notes by tag with `NoteBook.filter_by_tag`
+- Full-text search across note titles and bodies, ignoring letter case
+- Export a notebook to a JSON string without writing a file
+
+### Fixed
+
+- Opening a notes file that does not exist yet no longer has to fail: `storage.load_or_empty` returns an empty notebook instead
+- Repeated tags on a note can be collapsed with `dedupe_tags`, keeping the order they were first added
+
 ## [0.1.0] - 2026-01-15
 
 ### Added
